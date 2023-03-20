@@ -14,28 +14,28 @@ changes and channel shifts.
 
 CNN from scratch
 
--Input
--Conv1 24
--Conv2 32
--MaxPooling2D
--BatchNormalization
--Conv3 64
--Conv4 64
--Conv5 64
--MaxPooling2D
--BatchNormalization
--Conv6 96
--MaxPooling2D
--BatchNormalization
--Conv7 128
--GlobalMaxPooling2D
--BatchNormalization
--Dropout 0.2
--Dense 256
--Dropout 0.2
--Dense 256
--Dropout 0.2
--Output 8
+- Input
+- Conv1 24
+- Conv2 32
+- MaxPooling2D
+- BatchNormalization
+- Conv3 64
+- Conv4 64
+- Conv5 64
+- MaxPooling2D
+- BatchNormalization
+- Conv6 96
+- MaxPooling2D
+- BatchNormalization
+- Conv7 128
+- GlobalMaxPooling2D
+- BatchNormalization
+- Dropout 0.2
+- Dense 256
+- Dropout 0.2
+- Dense 256
+- Dropout 0.2
+- Output 8
 
 Transfer learning and fine tuning of Xception, VGG-16, EfficientNetB6 pre-trained on ImageNet
 With this approach we push the accuracy score up to 85%.
