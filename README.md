@@ -69,7 +69,7 @@ changes and channel shifts.
 | Dropout |           0.2 |
 | Output  |             8 |
 
-With Transfer learning and fine tuning of Xception, VGG-16, EfficientNetB6 pre-trained on ImageNet we push the accuracy score up to 85%.
+Thanks to transfer learning and fine tuning of Xception, VGG-16, EfficientNetB6 pre-trained on ImageNet we push the accuracy score up to 85%.
 
 
 
