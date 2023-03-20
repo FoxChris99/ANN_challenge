@@ -71,4 +71,4 @@ units.
 | Dense               |           64           |
 | Output              |           12           |
 
-Thanks to an ensemble model we could reduce the variance of the misclassification error, reaching 75% of overall accuracy.
+Thanks to an ensemble model composed by the above model and other CNNs we could reduce the variance of the misclassification error, reaching 75% of overall accuracy.
