@@ -11,42 +11,31 @@ tuning with some famous pre-trained models, considering also ensemble learning t
 A key point of our training procedure concerns data augmentation; the possible random transformations we take into account are: rotations, zooms , random flips, shifts over height and width, brightness
 changes and channel shifts.
 
+####CNN from scratch
 
-\begin{table}
-\centering
-\subfloat\centering 
-\begin{tabular}{l|r}
-Layer & filters/units \\ \hline
-Input \\
-Conv1 & 24 \\
-Conv2 & 32 \\
-MaxPooling2D \\
-BatchNormalization \\
-Conv3 & 64 \\
-Conv4 & 64 \\
-Conv5 & 64 \\
-MaxPooling2D \\
-BatchNormalization \\
-Conv6 & 96 
-\end{tabular}
-\qquad
-\subfloat\centering 
-\begin{tabular}{l|r}
-Layer & filters/units \\ \hline
-MaxPooling2D \\
-BatchNormalization \\
-Conv7 & 128 \\
-GlobalMaxPooling2D \\
-BatchNormalization \\ 
-Dropout & 0.2 \\
-Dense & 256 \\
-Dropout &0.2 \\
-Dense & 256 \\
-Dropout & 0.2 \\
-Output & 8
-\end{tabular}
-\caption{\label{tab:results} building the neural network layer by layer.}
-\end{table}
+| Layer   | filters/units |
+|---------|--------------:|
+| Conv1   |            24 |
+| Conv2   |            32 |
+|MaxPool2D|               |
+|BatchNorm|               |
+| Conv3   |            64 |
+| Conv4   |            64 |
+| Conv5   |            64 |
+|MaxPool2D|               |
+|BatchNorm|               |
+| Conv6   |            96 |
+|MaxPool2D|               |
+|BatchNorm|               |
+| Conv7   |           128 |
+|GlobalMaxpool            |
+|BatchNorm|               |
+| Dropout |           0.2 |
+| Dense   |           256 |
+| Dropout |           0.2 |
+| Dense   |           256 |
+| Dropout |           0.2 |
+| Output  |             8 |
 
 Transfer learning and fine tuning of Xception, VGG-16, EfficientNetB6 pre-trained on ImageNet
 With this approach we push the accuracy score up to 85%.
