@@ -37,8 +37,7 @@ changes and channel shifts.
 | Dropout |           0.2 |
 | Output  |             8 |
 
-Transfer learning and fine tuning of Xception, VGG-16, EfficientNetB6 pre-trained on ImageNet
-With this approach we push the accuracy score up to 85%.
+With Transfer learning and fine tuning of Xception, VGG-16, EfficientNetB6 pre-trained on ImageNet we push the accuracy score up to 85%.
 
 
 
@@ -56,18 +55,20 @@ The last model we develop is composed both by convolution operations and LSTM
 units.
 
 
-CNN + BiLSTM
+#### CNN + BiLSTM
 
-Input
-Conv1 32
-Conv2 64
-Conv3 128
-Bidirectional(LSTM) 128
-Bidirectional(LSTM) 128
-Dropout 0.2
-Dense 64
-Dropout 0.2
-Dense 64
-Output 12
+| \textbf{Layers}     | \textbf{Filters/Units} |
+|---------------------|:----------------------:|
+| Input               |                        |
+| Conv1               |           32           |
+| Conv2               |           64           |
+| Conv3               |           128          |
+| Bidirectional(LSTM) |           128          |
+| Bidirectional(LSTM) |           128          |
+| Dropout             |           0.2          |
+| Dense               |           64           |
+| Dropout             |           0.2          |
+| Dense               |           64           |
+| Output              |           12           |
 
 Thanks to an ensemble model we could reduce the variance of the misclassification error, reaching 75% of overall accuracy.
