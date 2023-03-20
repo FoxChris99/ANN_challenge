@@ -11,7 +11,7 @@ tuning with some famous pre-trained models, considering also ensemble learning t
 A key point of our training procedure concerns data augmentation; the possible random transformations we take into account are: rotations, zooms , random flips, shifts over height and width, brightness
 changes and channel shifts.
 
-####CNN from scratch
+###CNN from scratch
 
 | Layer   | filters/units |
 |---------|--------------:|
