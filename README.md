@@ -1,5 +1,37 @@
 # Artificial Neural Networks and Deep Learning challenges
 
+##  Time Series Classification
+
+In this competition we have to work on a classification problem with multivariate time series data.
+The dataset contains 2429 samples, where each sample is a time series of six different features having 36 time instances. For the classification task of this challenge there are 12 possible outcomes.
+The two main typologies of models we consider are: reccurent neural networks (RNN) and one
+dimension convolutional neural networks (CNN). We choose RNN because we have sequences of
+data, in particular we focus on Long short-term memory (LSTM) networks.
+When experimenting with LSTM models, we consider, as well as the
+classical layers, also bidirectional LSTM layers (BiLSTM).
+The last model we develop is composed both by convolution operations and LSTM
+units.
+
+
+#### CNN + BiLSTM
+
+| Layers              | filters/units          |
+|---------------------|:----------------------:|
+| Input               |                        |
+| Conv1               |           32           |
+| Conv2               |           64           |
+| Conv3               |           128          |
+| Bidirectional(LSTM) |           128          |
+| Bidirectional(LSTM) |           128          |
+| Dropout             |           0.2          |
+| Dense               |           64           |
+| Dropout             |           0.2          |
+| Dense               |           64           |
+| Output              |           12           |
+
+Thanks to an ensemble model composed by the above model and other CNNs we could reduce the variance of the misclassification error, reaching 75% of overall accuracy.
+
+
 ## Image classification
 
 For this competition we are required to classify images of plants which are divided into 8 categories
@@ -42,33 +74,3 @@ With Transfer learning and fine tuning of Xception, VGG-16, EfficientNetB6 pre-t
 
 
 
-##  Time Series Classification
-
-In this competition we have to work on a classification problem with multivariate time series data.
-The dataset contains 2429 samples, where each sample is a time series of six different features having 36 time instances. For the classification task of this challenge there are 12 possible outcomes.
-The two main typologies of models we consider are: reccurent neural networks (RNN) and one
-dimension convolutional neural networks (CNN). We choose RNN because we have sequences of
-data, in particular we focus on Long short-term memory (LSTM) networks.
-When experimenting with LSTM models, we consider, as well as the
-classical layers, also bidirectional LSTM layers (BiLSTM).
-The last model we develop is composed both by convolution operations and LSTM
-units.
-
-
-#### CNN + BiLSTM
-
-| Layers              | filters/units          |
-|---------------------|:----------------------:|
-| Input               |                        |
-| Conv1               |           32           |
-| Conv2               |           64           |
-| Conv3               |           128          |
-| Bidirectional(LSTM) |           128          |
-| Bidirectional(LSTM) |           128          |
-| Dropout             |           0.2          |
-| Dense               |           64           |
-| Dropout             |           0.2          |
-| Dense               |           64           |
-| Output              |           12           |
-
-Thanks to an ensemble model composed by the above model and other CNNs we could reduce the variance of the misclassification error, reaching 75% of overall accuracy.
