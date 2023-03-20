@@ -11,9 +11,9 @@ tuning with some famous pre-trained models, considering also ensemble learning t
 A key point of our training procedure concerns data augmentation; the possible random transformations we take into account are: rotations, zooms , random flips, shifts over height and width, brightness
 changes and channel shifts.
 
--------------------
+_________________
 CNN from scratch
--------------------
+_________________
 Input
 Conv1 24
 Conv2 32
@@ -55,9 +55,9 @@ classical layers, also bidirectional LSTM layers (BiLSTM).
 The last model we develop is composed both by convolution operations and LSTM
 units.
 
----------------------
+_________________
 CNN + BiLSTM
----------------------
+_________________
 Input
 Conv1 32
 Conv2 64
