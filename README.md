@@ -13,7 +13,7 @@ changes and channel shifts.
 
 #### CNN from scratch
 
-| Layer   | filters/units |
+| Layers  | filters/units |
 |---------|--------------:|
 | Conv1   |            24 |
 | Conv2   |            32 |
@@ -57,7 +57,7 @@ units.
 
 #### CNN + BiLSTM
 
-| \textbf{Layers}     | \textbf{Filters/Units} |
+| Layers              | filters/units          |
 |---------------------|:----------------------:|
 | Input               |                        |
 | Conv1               |           32           |
